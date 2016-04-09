@@ -1,0 +1,1 @@
+Learning project, just to keep some examples from Antony Goncalves' book "Beginning Java EE 7"
