@@ -2,22 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>goncalves-learning</artifactId>
+        <groupId>ru.orbot90</groupId>
+        <version>1.0</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.orbot90</groupId>
-    <artifactId>goncalves-learning</artifactId>
+    <artifactId>chapter-08</artifactId>
     <packaging>pom</packaging>
-    <version>1.0</version>
     <modules>
-        <module>chapter-02</module>
-        <module>chapter-03</module>
-        <module>chapter-04</module>
-        <module>chapter-08</module>
+        <module>chapter08-service</module>
+        <module>chapter08-consumer</module>
     </modules>
-
-    <properties>
-        <version.javaee>7.0</version.javaee>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -27,12 +24,11 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>${version.javaee}</version>
-            <scope>provided</scope>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
-
 
 </project>
